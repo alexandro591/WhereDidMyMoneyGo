@@ -1,6 +1,6 @@
 export default function dateToStringFormatter(date) {
     return date
-        .toLocaleTimeString('en-CA', {
+        .toLocaleTimeString('es-CA', {
             year: 'numeric',
             month: '2-digit',
             day: '2-digit',
@@ -8,6 +8,6 @@ export default function dateToStringFormatter(date) {
             minute: '2-digit',
             hour12: false,
         })
-        .split(', ')
+        .split(' ')
         .join('T');
 }
