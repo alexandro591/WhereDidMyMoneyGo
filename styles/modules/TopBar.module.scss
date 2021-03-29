@@ -1,0 +1,40 @@
+@import '../variables.scss';
+
+.main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(21, 21, 21);
+    height: $topbar-height;
+    display: flex;
+    align-items: center;
+    img {
+        cursor: pointer;
+        width: $topbar-height/2;
+        height: $topbar-height/2;
+        margin: auto;
+        margin-right: $topbar-height/4;
+    }
+    .total {
+        color: white;
+        margin-left: $topbar-height/4;
+    }
+    .green {
+        color: rgb(18, 218, 141);
+    }
+    .red {
+        color: rgb(242, 79, 51);
+    }
+    @media screen and (max-width: 700px) {
+        display: grid;
+        grid-template-columns: 0.33fr 0.33fr 0.33fr;
+        top: unset;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        img {
+            margin: auto;
+        }
+    }
+}

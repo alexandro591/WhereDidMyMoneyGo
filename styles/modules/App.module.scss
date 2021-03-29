@@ -1,0 +1,19 @@
+@import '../variables.scss';
+
+.main {
+    position: fixed;
+    top: $topbar-height;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: rgb(36, 36, 36);
+    @media screen and (max-width: 700px) {
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 10px;
+        bottom: $topbar-height;
+    }
+}
