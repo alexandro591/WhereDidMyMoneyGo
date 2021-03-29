@@ -9,5 +9,6 @@ export default function dateToStringFormatter(date) {
             hour12: false,
         })
         .split(' ')
-        .join('T');
+        .join('T')
+        .replace(/\//g, '-');
 }
