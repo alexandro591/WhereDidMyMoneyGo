@@ -61,7 +61,7 @@ export default function AddItemModal(props) {
                         variant='contained'
                         color='primary'
                         onClick={() => {
-                            if (name && amount && date) {
+                            if (name && amount) {
                                 setItems((items) => {
                                     return [
                                         {
